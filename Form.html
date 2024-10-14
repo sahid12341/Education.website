@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign up/Log In</title>
+  <link rel="icon" type="image/png" href="Logo.png">
+  <style>
+    :root {
+      --width: 100%;
+    }
+
+    /*Backgound*/
+    .bg {
+      width: var(--width);
+      height: 100vh;
+      position: absolute;
+    }
+
+    /* Styles for the form */
+    .log-in-form {
+      width: 350px;
+      height: 50%;
+      background-color: #5bb6843a;
+      padding: 20px;
+      border: 1px solid #000000;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.0);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .h {
+      font-weight: 900;
+      font-size: larger;
+
+    }
+
+    /* Styles for input fields (text and password) */
+    .text {
+      width: 60%;
+      height: 20px;
+      margin-bottom: 20px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 50px;
+    }
+
+    .password {
+      width: 60%;
+      height: 20px;
+      margin-bottom: 20px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 50px;
+    }
+
+    /* Styles for the submit button */
+    .submit {
+      width: 100%;
+      height: 40px;
+      background-color: #5bb684b0;
+      color: #000000;
+      padding: 10px;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+    }
+
+    /* Styles for the submit button on hover */
+    .submit:hover {
+
+      background-color: #5bb684b3;
+    }
+  </style>
+</head>
+
+<body>
+  <section>
+    <div>
+      <img src="Slider.png" alt="background" class="bg">
+    </div>
+    <form class="log-in-form">
+      <div class="h">Sign up or log in </div>
+      <h3>Sign or Log up for latest update</h3>
+      <hr style="width: 50%; background-color: #000000;">
+      <input type="text" id="username" name="username" placeholder="Username" required class="text">
+      <input type="password" id="password" name="password" placeholder="password" required class="password"><br><br>
+      <input type="submit" value="Sign up" class="submit">
+      <hr style="width: 100%; background-color: #000000;">
+    <p class="h">Log in</p>
+    <hr style="width: 50%; background-color: #000000;">
+    <br>
+    <br>
+      <input type="submit" value="Log in" class="submit">
+    </form>
+  </section>
+
+</body>
+
+</html>
